@@ -49,7 +49,7 @@ install:
   #- set PATH=%PATH%;C:\MinGW\msys\1.0\bin;C:\MinGW\bin
   #- mingw-get install mingw-developer-toolkit
   ## Set PHP.
-  - cinst php --allow-empty-checksums
+  - cinst php --allow-empty-checksums --version 7.2
   - SET PATH=C:\tools\php72\;%PATH%
   - cd c:\tools\php72
   - copy php.ini-production php.ini
