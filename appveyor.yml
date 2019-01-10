@@ -44,7 +44,7 @@ install:
   - cinst php --version 5.6.40 --allow-empty-checksums
   - SET PATH=C:\tools\php56\;%PATH%
   - cd C:\tools\php56
-  - copy C:\tools\php56\php.ini-production php.ini
+  - copy php.ini-production php.ini
   - echo date.timezone="Asia/Tokyo" >> php.ini
   - echo extension_dir=ext >> php.ini
   - echo extension=php_openssl.dll >> php.ini
@@ -60,6 +60,7 @@ install:
   - echo mbstring.http_input = UTF-8 >> php.ini
   - echo mbstring.http_output = pass >> php.ini
   - echo mbstring.internal_encoding = UTF-8 >> php.ini
+  - cd C:\projects\eccube2
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
 
