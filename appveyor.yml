@@ -60,7 +60,7 @@ install:
   - echo mbstring.http_input = UTF-8 >> php.ini
   - echo mbstring.http_output = pass >> php.ini
   - echo mbstring.internal_encoding = UTF-8 >> php.ini
-  - cd C:\projects\eccube2
+  - cd C:\projects\eccube
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
 
