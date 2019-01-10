@@ -42,8 +42,8 @@ install:
   #- mingw-get install mingw-developer-toolkit
   ## Set PHP.
   - cinst php --version 5.6.40 --allow-empty-checksums
-  - SET PATH=C:\tools\php\;%PATH%
-  - copy C:\tools\php\php.ini-production C:\tools\php\php.ini
+  - SET PATH=C:\tools\php56\;%PATH%
+  - copy C:\tools\php56\php.ini-production C:\tools\php\php.ini
   - echo date.timezone="Asia/Tokyo" >> C:\tools\php\php.ini
   - echo extension_dir=ext >> C:\tools\php\php.ini
   - echo extension=php_openssl.dll >> C:\tools\php\php.ini
